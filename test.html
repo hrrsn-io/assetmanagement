@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla:400,700">
+	
+	<link rel="stylesheet" href="css/lightbox.css" media="screen"/>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
+</head>
+<body>
+
+<p>Click the button to display a confirm box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+
+<script>
+function myFunction()
+{
+var x;
+var r=confirm("Press a button!");
+if (r==true)
+  {
+  x="You pressed OK!";
+  }
+else
+  {
+  x="You pressed Cancel!";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+</body>
+</html>
